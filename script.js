@@ -13,22 +13,21 @@ let counter = 0;
 function addInput(){
     const source = document.createElement("input");
     source.type = "text";
-    source.placeholder = "path";
+    source.placeholder = "Source Path";
     source.id = "path" + counter; // Add a unique "id" attribute with the value "path" + counter
 
     const target = document.createElement("input");
     target.type = "text";
-    target.placeholder = "recording";
+    target.placeholder = "File Name";
     target.id = "recording" + counter; // Add a unique "id" attribute with the value "recording" + counter
 
     const dest = document.createElement("input");
     dest.type = "text";
-    dest.placeholder = "destination";
+    dest.placeholder = "Drop File Destination";
     dest.id = "destination" + counter; // Add a unique "id" attribute with the value "destination" + counter
 
     const btn = document.createElement("a");
     btn.className = "delete";
-    btn.innerHTML = "&times";
 
     btn.addEventListener('click', removeInput);
 

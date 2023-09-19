@@ -133,9 +133,8 @@ option {
     border: 3px solid #1C2135;
 }
 .download-button {
-    width: 150px;
+    width: fit-content;
     margin: 50px auto;
-    padding: 10px 25px;
 
     display: flex;
     flex-direction: row;
@@ -150,6 +149,7 @@ option {
     border-radius: 100px;
 
     cursor: pointer;
+    caret-color: none;
 }
 
 button {
@@ -157,6 +157,8 @@ button {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
+
+    padding: 15px 25px;
 
     display: flex;
     flex-direction: row;
@@ -171,6 +173,7 @@ button {
     border-style: none;
 
     cursor: pointer;
+    caret-color: none;
 
     z-index: 1;
 }
